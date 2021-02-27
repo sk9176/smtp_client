@@ -8,7 +8,7 @@ def smtp_client(port=2525, mailserver='127.0.0.1'):
     #mailserver = ('127.0.0.1',2525)
     # Create socket called clientSocket and establish a TCP connection with mailserver and port
     clientSocket = socket(AF_INET, SOCK_STREAM)
-    clientSocket.connect((mailserver,2525))
+    clientSocket.connect((mailserver,1025))
 
     # Fill in start
     # Fill in end
@@ -88,4 +88,4 @@ def smtp_client(port=2525, mailserver='127.0.0.1'):
 
 
 if __name__ == '__main__':
-    smtp_client(2525, '127.0.0.1')
+    smtp_client(1025, '127.0.0.1')
